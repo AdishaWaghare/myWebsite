@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" target="_blank" method="post" enctype="application/x-www-form-urlencoded" novalidate autocomplete="off">
+
+        <!-- <form action="index.html" target="_blank" method="post" enctype="multipart/form-data"></form> -->
+         <!-- <form action="index.html" target="_blank" method="post" enctype="text/plain"></form> -->
+       <fieldset><legend>Registration form</legend>
+        <label for="un">
+            Username:
+        </label>
+        <!-- disabled- screen blank mai nhi dikhega -->
+        <input type="text" id="un" name="un" maxlength="20" autofocus disabled required >
+
+        <br><br>
+<!-- name is for unique identifier -->
+<!-- minlength, maxlength - for text & max,min - for numeric -->
+<!-- readonly - readonly hei hoga but screen mai normal dikhega -->
+        <label>
+            Email:<input type="email" placeholder="Enter your email" name="email"  readonly required > 
+        </label>
+        <br><br>
+        <label>
+            Password:<input type="password" placeholder="Enter your password" name="pass" required> 
+        </label>
+        <br><br>
+
+        <label>
+            Password:<input type="password" placeholder="confirm your password" name="pass" required> 
+        </label>
+        <br><br>
+        <fieldset><legend>Gender</legend>
+        <label >
+           Male: <input type="radio"  name="gender" value="Male">
+           Female: <input type="radio" name="gender" value="Female" checked>
+           others: <input type="radio" name="gender" value="others">
+           
+          </label>
+        </fieldset>
+
+        <br><br>
+        <fieldset><legend>Hobbies</legend>
+        <label >
+           <input type="checkbox"  name="gender" value="cricket"> Cricket
+           <input type="checkbox" name="gender" value="Badminton">  badminton
+            <input type="checkbox" name="gender" value="tennis"> Tennis
+           
+          </label>
+        </fieldset>
+         <br><br>
+
+         <fieldset><legend>Date Of Birth</legend>
+            <label>
+        <input type="date" required>
+        </label>
+        </fieldset>
+         <br>
+    
+         <br><br>
+
+         <fieldset><legend>Date Of Birth</legend>
+            <label>
+        <input type="datetime-local" required>
+        </label>
+        </fieldset>
+         <br>
+
+         <fieldset><legend>Age</legend>
+            <label>
+        <input type="number" min="18" max="35" required>
+        </label>
+        </fieldset>
+         <br>
+<!-- color -->
+         <label>
+            color: <input type="color" required>
+         </label><br><br>
+<!-- range -->
+<br>
+<label>
+    Range:<input type="range" value="10" min="1" max="40" required>
+</label>
+<br>
+<!-- Choose file -->
+
+<label>
+    Choose file:
+    <input type="file" required>
+</label>
+<br><br>
+<!-- URL -->
+<label>
+    url:<input type="url" required>
+</label>
+<br><br>
+<!-- contact number -->
+<label>
+    Contact: 
+    <input type="tel" maxlength="10" pattern="[0-9]{10}" reuired>
+</label>
+<br><br>
+<!-- city option -->
+<label>
+<select name="city">
+    <option value="unknown">--select--</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Pune">Pune</option>
+    <option value="nashik" selected >nashik</option>
+    <option value="Gujrat">Gujrat</option>
+    
+</select>
+<br><br>
+<!-- Trending courses: -->
+<label>
+    Trending courses:
+    <select name="tcourse">
+        <optgroup label="frontend">
+            <option value="HTML5">Html5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Javascript">Javascript</option>
+        </optgroup>
+
+        <optgroup label="Backend">
+            <option value="Python">python</option>
+            <option value="php">PHP</option>
+            <option value="Java">Java</option>
+        </optgroup>
+    </select>
+</label><br><br>
+
+<!-- course  available-->
+<!-- your list and id name must be similar -->
+<label>
+<input list="courses" name="course">
+<datalist id="courses">
+    <option value="python">python</option>
+    <option value="PHP">PHP</option>
+    <option value="Java">Java</option>
+    <option value="Javascript">Javascript</option>
+</datalist>
+</label>
+<br><br>
+
+<label>
+    Address:<br>
+    <textarea name="address" cols="40" rows="10"></textarea>
+</label>
+<br><br>
+<!-- search -->
+<input type="search"><br><br>
+         
+<br><br>
+        <input type="Button" value="login">
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+        <button type="submit">SUBMIT</button>
+     </fieldset>
+    </form>
+    
+</body>
+</html>
